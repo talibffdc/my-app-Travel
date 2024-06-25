@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import React, { useState } from "react";
 
 const LandingPage = () => {
@@ -29,7 +29,7 @@ const LandingPage = () => {
       </header>
       <main className="container mx-auto p-8 text-center">
         <h1 className="text-4xl font-bold mb-4">
-          Let's explore & travel the world
+          Let&apos;s explore &amp; travel the world
         </h1>
         <p className="mb-8">
           Find the best destinations and the most popular stays!
