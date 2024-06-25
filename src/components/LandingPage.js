@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 
-export default function LandingPage() {
+const LandingPage = () => {
   const [departure, setDeparture] = useState("Singapore (SIN)");
   const [arrival, setArrival] = useState("Los Angeles (LA)");
   const [date, setDate] = useState("2022-05-01");
@@ -57,7 +57,10 @@ export default function LandingPage() {
               className="border p-2 rounded w-full md:w-1/3"
             />
           </div>
-          <button className="mt-4 bg-yellow-500 text-white py-2 px-4 rounded">
+          <button
+            type="button"
+            className="mt-4 bg-yellow-500 text-white py-2 px-4 rounded"
+          >
             Search Flights
           </button>
         </div>
@@ -84,4 +87,6 @@ export default function LandingPage() {
       </main>
     </div>
   );
-}
+};
+
+export default LandingPage;
